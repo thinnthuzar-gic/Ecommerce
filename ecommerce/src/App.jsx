@@ -1,24 +1,16 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import CategorySection from "./components/CategorySection";
+import ProductSection from "./components/Product/ProductSection";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-   <Header />
-      <div>
-        
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
-    <Footer />
+      <Header />
+      <CategorySection />
+      <ProductSection />
+      <Footer />
     </>
-  )
+  );
 }
-
-export default App
