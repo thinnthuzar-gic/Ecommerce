@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Footer = () => {
+  const date = new Date();
   return (
-    <footer className="mt-auto bg-zinc-950 text-white text-center font-extrabold">
-      @2024 MMSIT All rights reserved.
+    <footer className="mt-3 bg-zinc-950 text-white text-center font-extrabold">
+      @ {date.getUTCFullYear() } All rights reserved.
     </footer>
   )
 }
